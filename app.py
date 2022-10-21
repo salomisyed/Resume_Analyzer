@@ -18,6 +18,7 @@ import plotly.express as px
 import spacy
 import nltk
 from nltk.corpus import stopwords
+STOPWORDS  = set(stopwords.words('english'))
 
 def fetch_yt_video(link):
     video = pafy.new(link)
