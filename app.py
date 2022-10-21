@@ -16,6 +16,8 @@ from Courses import ds_course,web_course,android_course,ios_course,uiux_course,r
 import pafy
 import plotly.express as px
 import spacy
+import nltk
+nltk.download('stopwords')
 
 def fetch_yt_video(link):
     video = pafy.new(link)
